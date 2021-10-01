@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/vue.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <title>Cloud Aggragator</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <div id="loading" v-show="!isLoaded">
+            <img src="img/load.gif">
+        </div>
+        <div id="header" v-show="isLoaded">
+            Cloud Aggragator
+        </div>
+        <div id="contents" v-show="isLoaded">
+            <p id="complement">クラウド関連のツイート集めます(内容更新に画面リロード不要)</p>
+            <div id="tweets">
+                <div id="item1"><a class="twitter-timeline" data-width="390" data-height="3000" data-theme="dark"
+                        href="https://twitter.com/NyannkoB/timelines/1279606802359873538?ref_src=twsrc%5Etfw">AWS -
+                        Curated tweets by NyannkoB</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div id="item2"><a class="twitter-timeline" data-width="390" data-height="3000" data-theme="dark"
+                        href="https://twitter.com/NyannkoB/timelines/1279606921276780546?ref_src=twsrc%5Etfw">AZURE
+                        -
+                        Curated tweets by NyannkoB</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div id="item3"><a class="twitter-timeline" data-width="390" data-height="3000" data-theme="dark"
+                        href="https://twitter.com/NyannkoB/timelines/1279607026281152512?ref_src=twsrc%5Etfw">GCP -
+                        Curated tweets by NyannkoB</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div id="item4"><a class="twitter-timeline" data-width="390" data-height="3000" data-theme="dark"
+                        href="https://twitter.com/NyannkoB/timelines/1279632541406789633?ref_src=twsrc%5Etfw">AWS障害
+                        - Curated tweets by NyannkoB</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                <div id="item5"><a class="twitter-timeline" data-width="390" data-height="3000" data-theme="dark"
+                        href="https://twitter.com/NyannkoB/timelines/1279631177129721861?ref_src=twsrc%5Etfw">AZURE障害
+                        - Curated tweets by NyannkoB</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
